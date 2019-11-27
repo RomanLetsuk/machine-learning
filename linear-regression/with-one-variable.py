@@ -9,7 +9,6 @@ from functools import reduce
 from math import fabs
 
 profit_data_path = './data/ex1data1.txt'
-houses_data_path = './data/ex1data2.txt'
 learning_rate = 0.01
 
 
@@ -43,7 +42,7 @@ def gradient_descent(data, theta_0, theta_1):
             theta_0 = temp0
         if fabs(temp1 - theta_1) > 0.001:
             theta_1 = temp1
-    plt.show()
+    # plt.show()
     return theta_0, theta_1
 
 
