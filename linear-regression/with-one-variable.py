@@ -78,9 +78,9 @@ def show_3d_surface(data):
 
 def main():
     profit_data, transposed_profit_data = load_profit_data()
-    # print(transposed_profit_data)
-    # show_profit_from_population(transposed_profit_data)
-    # print(cost_func(profit_data, -3.2953852026551806, 1.1316717519613395))
+    print(transposed_profit_data)
+    show_profit_from_population(transposed_profit_data)
+    print(cost_func(profit_data, -3.2953852026551806, 1.1316717519613395))
     theta_0, theta_1 = gradient_descent(profit_data, theta_0=0, theta_1=0)
     print('result', 'theta0 =', theta_0, 'theta1 =', theta_1)
     show_hypothesis_func(transposed_profit_data, theta_0, theta_1)
